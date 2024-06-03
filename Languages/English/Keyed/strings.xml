@@ -16,7 +16,7 @@
 	<storageBuildings>Storage Buildings Settings</storageBuildings>
 	<!-- Input Settings -->
 	<mouseInputButtonLabel>Thing Limiter Window Open Button</mouseInputButtonLabel>
-	<mouseInputButtonTooltip>Specify which mouse button to open thing limiter window</mouseInputButtonTooltip>
+	<mouseInputButtonTooltip>When hovered label name, click specified mouse button to open thing limiter window</mouseInputButtonTooltip>
 	<leftMouseButton>Left Mouse Click</leftMouseButton>
 	<rightMouseButton>Right Mouse Click</rightMouseButton>
 	<middleMouseButton>Middle Mouse Click</middleMouseButton>

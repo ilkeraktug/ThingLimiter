@@ -16,7 +16,7 @@
 	<storageBuildings>Depolama Binaları Ayarları</storageBuildings>
 	<!-- Input Settings -->
 	<mouseInputButtonLabel>Limitleme Penceresi Açma Tuşu</mouseInputButtonLabel>
-	<mouseInputButtonTooltip>Limitleme penceresi açma tuşunu belirle</mouseInputButtonTooltip>
+	<mouseInputButtonTooltip>Eşyanın ismi üzerine gelindiğinde limitleme penceresi açmak için belirlenen tuşa basınız.</mouseInputButtonTooltip>
 	<leftMouseButton>Sol Mouse Tuşu</leftMouseButton>
 	<rightMouseButton>Sağ Mouse Tuşu</rightMouseButton>
 	<middleMouseButton>Orta Mouse Tuşu</middleMouseButton>
