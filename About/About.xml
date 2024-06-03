@@ -14,5 +14,17 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 		</li>
 	</modDependencies>
-	<description>Enables storage units to have limitations on the number of things they can hold.</description>
+	<description>Enables storage units to have limitations on the number of things they can hold.
+		How to use :
+	
+		* Open storage settings and click on item label with specified mouse button in settings to open Limit Window.
+		* Specify the limit for that item.
+		* Type -1 to set unlimited.
+	
+	
+		Things to AVOID:
+	
+		* Do NOT change language if you have any limit settings, or all saved limit settings will be deleted.
+	
+		For more settings, please check mod settings</description>
 </ModMetaData>
