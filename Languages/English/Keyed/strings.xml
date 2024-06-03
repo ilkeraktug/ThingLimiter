@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Set Limit Window -->
+	<setLimit>Set Limit for </setLimit>
+	<currentLimitPrefix>Current / Limit </currentLimitPrefix>
+	<setLimitWindowTip>Type -1 or ∞ to set unlimited</setLimitWindowTip>
+	<setLimitWindowInvalidText>Text should contain only digits (or '-', '∞')</setLimitWindowInvalidText>
+
+	<!-- Storage Gizmos -->
+	<setShouldCopyLimitSettings>Allow Copying Limit Settings</setShouldCopyLimitSettings>
+	<setShouldCopyLimitSettingsDesc>When disabled, limit settings will not be copied</setShouldCopyLimitSettingsDesc>
+
+	<!-- Settings -->
+	<!-- Headlines -->
+	<inputHeadline>Input Settings</inputHeadline>
+	<storageBuildings>Storage Buildings Settings</storageBuildings>
+	<!-- Input Settings -->
+	<mouseInputButtonLabel>Thing Limiter Window Open Button</mouseInputButtonLabel>
+	<mouseInputButtonTooltip>Specify which mouse button to open thing limiter window</mouseInputButtonTooltip>
+	<leftMouseButton>Left Mouse Click</leftMouseButton>
+	<rightMouseButton>Right Mouse Click</rightMouseButton>
+	<middleMouseButton>Middle Mouse Click</middleMouseButton>
+	<unknownMouseButton>Unknown</unknownMouseButton>
+	<!-- Storage Settings -->
+	<shouldShareLimitSettingsWhenLinkedLabel>Allow share limit settings</shouldShareLimitSettingsWhenLinkedLabel>
+	<shouldShareLimitSettingsWhenLinkedTooltip>When disabled, storage buildings will not share limit settings when linked</shouldShareLimitSettingsWhenLinkedTooltip>
+	<shouldKeepLimitSettingsWhenUnlinked>Keep limit settings when unlinked</shouldKeepLimitSettingsWhenUnlinked>
+	<shouldKeepLimitSettingsWhenUnlinkedTooltip>When disabled, unlinked storage buildings all limit settings will be set to unlimited</shouldKeepLimitSettingsWhenUnlinkedTooltip>
+	<shouldKeepLimitSettingsWhenUnlinkedFalse>Keep limit settings (Hint : Share limit settings should be allowed)</shouldKeepLimitSettingsWhenUnlinkedFalse>
+	<shouldKeepLimitSettingsWhenUnlinkedFalseTooltip>You should allow share limits settings.</shouldKeepLimitSettingsWhenUnlinkedFalseTooltip>
+
+</LanguageData>

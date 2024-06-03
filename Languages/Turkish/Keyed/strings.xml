@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- settings -->
+	<setLimit>Limit Belirle </setLimit>
+	<currentLimitPrefix>Şuan / Limit </currentLimitPrefix>
+	<setLimitWindowTip>Limitsiz yapmak için -1 veya ∞ işaretini giriniz</setLimitWindowTip>
+	<setLimitWindowInvalidText>Lütfen sadece rakamlar giriniz (veya '-', '∞')</setLimitWindowInvalidText>
+
+	<!-- Storage Gizmos -->
+	<setShouldCopyLimitSettings>Limit Kopyalamaya İzin Ver</setShouldCopyLimitSettings>
+	<setShouldCopyLimitSettingsDesc>İzin verildiğinde, limit ayarları da kopyalanır</setShouldCopyLimitSettingsDesc>
+
+	<!-- Settings -->
+	<!-- Headlines -->
+	<inputHeadline>Girdi Ayarları</inputHeadline>
+	<storageBuildings>Depolama Binaları Ayarları</storageBuildings>
+	<!-- Input Settings -->
+	<mouseInputButtonLabel>Limitleme Penceresi Açma Tuşu</mouseInputButtonLabel>
+	<mouseInputButtonTooltip>Limitleme penceresi açma tuşunu belirle</mouseInputButtonTooltip>
+	<leftMouseButton>Sol Mouse Tuşu</leftMouseButton>
+	<rightMouseButton>Sağ Mouse Tuşu</rightMouseButton>
+	<middleMouseButton>Orta Mouse Tuşu</middleMouseButton>
+	<unknownMouseButton>Bilinmiyor!</unknownMouseButton>
+	<!-- Storage Settings -->
+	<shouldShareLimitSettingsWhenLinkedLabel>Limit ayarlarını paylaşmaya izin ver</shouldShareLimitSettingsWhenLinkedLabel>
+	<shouldShareLimitSettingsWhenLinkedTooltip>İzin verildiğinde, bağlantı sağlandığında limitleme ayarlarını paylaşır.</shouldShareLimitSettingsWhenLinkedTooltip>
+	<shouldKeepLimitSettingsWhenUnlinked>Bağlantı koparıldığında limit ayarlarını sakla</shouldKeepLimitSettingsWhenUnlinked>
+	<shouldKeepLimitSettingsWhenUnlinkedTooltip>İzin verildiğinde, bağlantı koparıldığında limitleme ayarlarını sıfırla.</shouldKeepLimitSettingsWhenUnlinkedTooltip>
+	<shouldKeepLimitSettingsWhenUnlinkedFalse>Bağlantı koparıldığında limit ayarlarını sakla (İpucu : Öncelikle limit ayarlarını paylaşmaya izin ver)</shouldKeepLimitSettingsWhenUnlinkedFalse>
+	<shouldKeepLimitSettingsWhenUnlinkedFalseTooltip>Öncelikle limit ayarlarını paylaşmaya izin ver</shouldKeepLimitSettingsWhenUnlinkedFalseTooltip>
+
+</LanguageData>
