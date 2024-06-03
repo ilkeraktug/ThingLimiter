@@ -1,8 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <packageId>Ilker.CustomZone</packageId>
-  <author>CustomZone</author>
-  <supportedVersions>
-  <li>1.5</li>
-   </supportedVersions>
+	<name>Thing Limiter</name>
+	<author>ilkeraktug</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<url>none</url>
+	<packageId>ilkeraktug.ThingLimiterMod</packageId>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>Enables storage units to have limitations on the number of things they can hold.</description>
 </ModMetaData>
