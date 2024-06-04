@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9646c826-6eef-4022-ae09-a67086a58c0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/UI/Tab_Storage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/UI/ClearLimitSettingsWarningWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Languages/English/Keyed/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Languages/English/Keyed/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ThingLimiterMod/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod.sln" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Core/Mod/ThingLimiterMod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Core/Mod/StorageItemLimiterMod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Core/Mod/ThingLimiterModSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Core/Mod/StorageItemLimiterModSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Helpers/LimitSystemHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Helpers/LimitSystemHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Helpers/SettingsHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Helpers/SettingsHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Helpers/StringHTMLHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Helpers/StringHTMLHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/DeleteListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/DeleteListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/Expose/ExposeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/Expose/ExposeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/HaulAIUtilityPatches.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/HaulAIUtilityPatches.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/Storage/StorageGroupUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/Storage/StorageGroupUtility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/Storage/StorageSettingsPatches.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/Storage/StorageSettingsPatches.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/Storage/StoreUtilityPatches.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/Storage/StoreUtilityPatches.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Patches/UI/ListingTreePatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Patches/UI/ListingTreePatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Trackers/CopyTrackers/StorageCopyTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Trackers/CopyTrackers/StorageCopyTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/Trackers/LimitTrackers/StorageLimitTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/Trackers/LimitTrackers/StorageLimitTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/Source/UI/SetLimitWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/Source/UI/SetLimitWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThingLimiterMod/ThingLimiterMod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/StorageItemLimiterMod/StorageItemLimiterMod.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="9646c826-6eef-4022-ae09-a67086a58c0c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -308,7 +279,7 @@
       <workItem from="1717452505315" duration="389000" />
       <workItem from="1717452971671" duration="3000" />
       <workItem from="1717452984137" duration="1082000" />
-      <workItem from="1717525092500" duration="11488000" />
+      <workItem from="1717525092500" duration="11790000" />
     </task>
     <servers />
   </component>

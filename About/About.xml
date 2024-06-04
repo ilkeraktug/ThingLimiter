@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Thing Limiter</name>
+	<name>Storage Item Limiter</name>
 	<author>ilkeraktug</author>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
 	<url>none</url>
-	<packageId>ilkeraktug.ThingLimiterMod</packageId>
+	<packageId>ilkeraktug.StorageItemLimiterMod</packageId>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
