@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<!-- settings -->
+	<!-- Storage Tab-->
+	<clearItemLimitsLabel>Limit Ayarlarını{0}Temizle</clearItemLimitsLabel>
+	<!-- Warning Window-->
+	<clearItemLimitsWarningLabel>Gerçekten limit ayarlarını silmek istiyor musun ? : </clearItemLimitsWarningLabel>
+	<clearItemLimitsWarningTip>Uyarı mesajını her zaman ayarlardan kapatabilirsiniz!</clearItemLimitsWarningTip>
+	<clearItemLimitsWarningYesButton>Evet</clearItemLimitsWarningYesButton>
+
+	<!-- Set Limit Window -->
 	<setLimit>Limit Belirle </setLimit>
 	<currentLimitPrefix>Şuan / Limit </currentLimitPrefix>
 	<setLimitWindowTip>Limitsiz yapmak için -1 veya ∞ işaretini giriniz</setLimitWindowTip>
@@ -13,7 +20,8 @@
 	<!-- Settings -->
 	<!-- Headlines -->
 	<inputHeadline>Girdi Ayarları</inputHeadline>
-	<storageBuildings>Depolama Binaları Ayarları</storageBuildings>
+	<storageBuildingsHeadline>Depolama Binaları Ayarları</storageBuildingsHeadline>
+	<clearLimitSettingsHeadline>Clear Button Settings</clearLimitSettingsHeadline>
 	<!-- Input Settings -->
 	<mouseInputButtonLabel>Limitleme Penceresi Açma Tuşu</mouseInputButtonLabel>
 	<mouseInputButtonTooltip>Eşyanın ismi üzerine gelindiğinde limitleme penceresi açmak için belirlenen tuşa basınız.</mouseInputButtonTooltip>
@@ -21,6 +29,12 @@
 	<rightMouseButton>Sağ Mouse Tuşu</rightMouseButton>
 	<middleMouseButton>Orta Mouse Tuşu</middleMouseButton>
 	<unknownMouseButton>Bilinmiyor!</unknownMouseButton>
+	<!-- Clear Item Settings -->
+	<bShowClearLimitSettingsButton>"Limit Ayarlarını Temizle" butonu gözüksün</bShowClearLimitSettingsButton>
+	<bShowClearLimitSettingsButtonTooltip>"Limit Ayarlarını Temizle" butonunun gözükmesini ayarla.</bShowClearLimitSettingsButtonTooltip>
+	<bShowWarningWhenClearLimitSettingsClicked>Limit ayarlarını temizlerken uyarı gösterilsin</bShowWarningWhenClearLimitSettingsClicked>
+	<bShowWarningWhenClearLimitSettingsClickedTooltip>Limit ayarlarını temizlerken uyarı gösterilip gösterilmemesi ayarlansın. Açık kalması şiddetle tavsiye edilir.</bShowWarningWhenClearLimitSettingsClickedTooltip>
+	<bShowWarningWhenClearLimitSettingsClickedFalse>Öncelikle "Limit Ayarlarını Temizle" butonu gözükmesi ayarlanmalıdır.</bShowWarningWhenClearLimitSettingsClickedFalse>
 	<!-- Storage Settings -->
 	<shouldShareLimitSettingsWhenLinkedLabel>Limit ayarlarını paylaşmaya izin ver</shouldShareLimitSettingsWhenLinkedLabel>
 	<shouldShareLimitSettingsWhenLinkedTooltip>İzin verildiğinde, bağlantı sağlandığında limitleme ayarlarını paylaşır.</shouldShareLimitSettingsWhenLinkedTooltip>

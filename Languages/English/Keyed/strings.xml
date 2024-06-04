@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<!-- Storage Tab-->
+	<clearItemLimitsLabel>Clear{0}Limit Settings</clearItemLimitsLabel>
+	<!-- Warning Window-->
+	<clearItemLimitsWarningLabel>Are you sure about deleting limit settings for : </clearItemLimitsWarningLabel>
+	<clearItemLimitsWarningTip>You can disable warning message in mod options!</clearItemLimitsWarningTip>
+	<clearItemLimitsWarningYesButton>Yes</clearItemLimitsWarningYesButton>
+	
 	<!-- Set Limit Window -->
 	<setLimit>Set Limit for </setLimit>
 	<currentLimitPrefix>Current / Limit </currentLimitPrefix>
@@ -13,7 +20,8 @@
 	<!-- Settings -->
 	<!-- Headlines -->
 	<inputHeadline>Input Settings</inputHeadline>
-	<storageBuildings>Storage Buildings Settings</storageBuildings>
+	<storageBuildingsHeadline>Storage Buildings Settings</storageBuildingsHeadline>
+	<clearLimitSettingsHeadline>Clear Button Settings</clearLimitSettingsHeadline>
 	<!-- Input Settings -->
 	<mouseInputButtonLabel>Thing Limiter Window Open Button</mouseInputButtonLabel>
 	<mouseInputButtonTooltip>When hovered label name, click specified mouse button to open thing limiter window</mouseInputButtonTooltip>
@@ -21,6 +29,12 @@
 	<rightMouseButton>Right Mouse Click</rightMouseButton>
 	<middleMouseButton>Middle Mouse Click</middleMouseButton>
 	<unknownMouseButton>Unknown</unknownMouseButton>
+	<!-- Clear Item Settings -->
+	<bShowClearLimitSettingsButton>Should show "Clear Limit Settings" button ?</bShowClearLimitSettingsButton>
+	<bShowClearLimitSettingsButtonTooltip>Whatever, show clear limit settings button to clear all limit settings</bShowClearLimitSettingsButtonTooltip>
+	<bShowWarningWhenClearLimitSettingsClicked>Should warn about deleting settings ?</bShowWarningWhenClearLimitSettingsClicked>
+	<bShowWarningWhenClearLimitSettingsClickedTooltip>Whatever, show warning if "Clear Limit Settings" clicked. It's strongly recommended to keep it set.</bShowWarningWhenClearLimitSettingsClickedTooltip>
+	<bShowWarningWhenClearLimitSettingsClickedFalse>You should enable showing "Clear Limit Settings" button.</bShowWarningWhenClearLimitSettingsClickedFalse>
 	<!-- Storage Settings -->
 	<shouldShareLimitSettingsWhenLinkedLabel>Allow share limit settings</shouldShareLimitSettingsWhenLinkedLabel>
 	<shouldShareLimitSettingsWhenLinkedTooltip>When disabled, storage buildings will not share limit settings when linked</shouldShareLimitSettingsWhenLinkedTooltip>
