@@ -2,6 +2,7 @@
 using RimWorld;
 using StorageItemLimiterMod.Source.Trackers.CopyTrackers;
 using StorageItemLimiterMod.Source.Trackers.LimitTrackers;
+using UnityEngine;
 using Verse;
 
 namespace StorageItemLimiterMod.Source.Patches.Expose;
@@ -14,6 +15,10 @@ public static class StockpileZone_ExposeData_Patcher
 		if (!StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance))
 		{
 			StorageLimitTracker.ThingLimitsByZone.Add(__instance, new StorageLimitDictionary());
+		}
+		else if (StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder == null)
+		{
+			StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder = new();
 		}
 		
 		Scribe_Collections.Look(ref StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder, "ThingLimitsByZone", LookMode.Value, LookMode.Value);
@@ -29,8 +34,12 @@ public static class Building_Storage_ExposeData_Patcher
 		{
 			StorageLimitTracker.ThingLimitsByStorage.Add(__instance, new StorageLimitDictionary());
 		}
+		else if (StorageLimitTracker.ThingLimitsByStorage[__instance].m_DataHolder == null)
+		{
+			StorageLimitTracker.ThingLimitsByStorage[__instance].m_DataHolder = new();
+		}
 		
-		Scribe_Collections.Look(ref StorageLimitTracker.ThingLimitsByStorage[__instance].m_DataHolder, "ThingLimitsByZone", LookMode.Value, LookMode.Value);
+		Scribe_Collections.Look(ref StorageLimitTracker.ThingLimitsByStorage[__instance].m_DataHolder, "ThingLimitsByStorage", LookMode.Value, LookMode.Value);
 	}
 }
 
@@ -43,7 +52,7 @@ public static class StorageSettings_ExposeData_Patcher
 		{
 			StorageCopyTracker.StorageGizmoSettings.Add(__instance, new StorageGizmoSettings());
 		}
-		
+
 		Scribe_Values.Look(ref StorageCopyTracker.StorageGizmoSettings[__instance].bShouldCopyLimitSettings, "bShouldCopyLimitSettings", false, false);
 	}
 }

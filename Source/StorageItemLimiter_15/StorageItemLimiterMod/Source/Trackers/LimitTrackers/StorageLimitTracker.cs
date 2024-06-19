@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using RimWorld;
+using Verse;
 
 namespace StorageItemLimiterMod.Source.Trackers.LimitTrackers;
 
@@ -12,7 +13,7 @@ public static class StorageLimitTracker
 
 public class StorageLimitDictionary
 {
-    public Dictionary<string, int> m_DataHolder;
+    public Dictionary<string, int> m_DataHolder = new Dictionary<string, int>();
     public StorageLimitDictionary()
     {
         m_DataHolder = new Dictionary<string, int>();
