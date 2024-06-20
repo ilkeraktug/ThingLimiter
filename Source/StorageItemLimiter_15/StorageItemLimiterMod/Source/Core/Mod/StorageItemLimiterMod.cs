@@ -88,23 +88,48 @@ namespace StorageItemLimiterMod.Source.Core.Mod
 			listing_Standard.Label(StringHTMLHelper.GetBoldString("storageBuildingsHeadline".Translate()));
 			listing_Standard.GapLine();
 			
-			listing_Standard.CheckboxLabeled("shouldShareLimitSettingsWhenLinkedLabel".Translate(), ref StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked, "shouldShareLimitSettingsWhenLinkedTooltip".Translate());
-			if (StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked)
+			listing_Standard.CheckboxLabeled("shouldCountThingsAsOneLinkedStorageLabel".Translate(), ref StorageItemLimiterModSettings.bShouldCountThingsAsOneLinkedStorage, "shouldCountThingsAsOneLinkedStorageTooltip".Translate());
+
+			if (StorageItemLimiterModSettings.bShouldCountThingsAsOneLinkedStorage)
 			{
-				listing_Standard.CheckboxLabeled("shouldKeepLimitSettingsWhenUnlinked".Translate(), ref StorageItemLimiterModSettings.bShouldKeepLimitSettingsWhenUnlinked, "shouldKeepLimitSettingsWhenUnlinkedTooltip".Translate());
-			}
-			else
-			{
-				StorageItemLimiterModSettings.bShouldKeepLimitSettingsWhenUnlinked = false;
 				Rect newRect = new Rect(0, listing_Standard.CurHeight, inRect.width * 0.9f, 21.0f);
 				if (Mouse.IsOver(newRect))
 				{
 					GUI.DrawTexture(newRect, (Texture)TexUI.HighlightTex);
 				}
+				TooltipHandler.TipRegion(newRect, (TipSignal)"shouldShareLimitSettingsWhenLinkedFalseTooltip".Translate());
 				
-				TooltipHandler.TipRegion(newRect, (TipSignal)"shouldKeepLimitSettingsWhenUnlinkedFalseTooltip".Translate());
-				
-				listing_Standard.Label("shouldKeepLimitSettingsWhenUnlinkedFalse".Translate());
+				listing_Standard.Label("shouldShareLimitSettingsWhenLinkedFalseLabel".Translate());
+				StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked = false;
+			}
+			else
+			{
+				listing_Standard.CheckboxLabeled("shouldShareLimitSettingsWhenLinkedLabel".Translate(), ref StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked, "shouldShareLimitSettingsWhenLinkedTooltip".Translate());
+			}
+
+			if (!StorageItemLimiterModSettings.bShouldCountThingsAsOneLinkedStorage)
+			{
+
+				if (StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked)
+				{
+					listing_Standard.CheckboxLabeled("shouldKeepLimitSettingsWhenUnlinked".Translate(),
+						ref StorageItemLimiterModSettings.bShouldKeepLimitSettingsWhenUnlinked,
+						"shouldKeepLimitSettingsWhenUnlinkedTooltip".Translate());
+				}
+				else
+				{
+					StorageItemLimiterModSettings.bShouldKeepLimitSettingsWhenUnlinked = false;
+					Rect newRect = new Rect(0, listing_Standard.CurHeight, inRect.width * 0.9f, 21.0f);
+					if (Mouse.IsOver(newRect))
+					{
+						GUI.DrawTexture(newRect, (Texture)TexUI.HighlightTex);
+					}
+
+					TooltipHandler.TipRegion(newRect,
+						(TipSignal)"shouldKeepLimitSettingsWhenUnlinkedFalseTooltip".Translate());
+
+					listing_Standard.Label("shouldKeepLimitSettingsWhenUnlinkedFalse".Translate());
+				}
 			}
 
 			Widgets.EndScrollView();

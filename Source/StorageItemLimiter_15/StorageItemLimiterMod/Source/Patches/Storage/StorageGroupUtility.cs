@@ -13,7 +13,7 @@ public static class StorageGroupUtility_SetStorageGroup_Patches
 {
 	public static void Postfix(IStorageGroupMember member, StorageGroup newGroup, bool removeIfEmpty = true)
 	{
-		if (StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked)
+		if (StorageItemLimiterModSettings.bShouldCountThingsAsOneLinkedStorage || StorageItemLimiterModSettings.bShouldShareLimitSettingsWhenLinked)
 		{
 			foreach (object selectedObject in Find.Selector.SelectedObjects)
 			{

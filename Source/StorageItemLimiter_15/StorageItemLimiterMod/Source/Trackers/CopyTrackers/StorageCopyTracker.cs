@@ -16,7 +16,7 @@ public class StorageGizmoSettings
 
 	public StorageGizmoSettings()
 	{
-		bShouldCopyLimitSettings = false;
+		bShouldCopyLimitSettings = true;
 	}
 	public StorageGizmoSettings(bool ShouldCopyLimitSettings)
 	{

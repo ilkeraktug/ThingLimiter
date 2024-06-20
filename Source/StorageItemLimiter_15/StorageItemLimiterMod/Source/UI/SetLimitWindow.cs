@@ -86,7 +86,15 @@ public class SetLimitWindow : Window
 		}
 		else if (Find.Selector.FirstSelectedObject is Building_Storage selectedStorage)
 		{
-			CurrentNumber = LimitSystemHelper.GetCurrentThingCount(selectedStorage, thingType);
+			if (StorageItemLimiterModSettings.bShouldCountThingsAsOneLinkedStorage)
+			{
+				CurrentNumber = LimitSystemHelper.GetCurrentThingCountForAllLinkedStorages(selectedStorage, thingType);
+			}
+			else
+			{
+				CurrentNumber = LimitSystemHelper.GetCurrentThingCount(selectedStorage, thingType);
+			}
+			
 			MaxNumber = LimitSystemHelper.GetThingLimit(selectedStorage, thingType);
 		}
 

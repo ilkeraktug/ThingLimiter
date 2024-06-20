@@ -22,7 +22,6 @@ public static class Building_Storage_DeSpawn_Patches
 {
 	public static void Postfix(Building_Storage __instance, DestroyMode mode)
 	{
-		Log.Message("asdasda");
 		if (__instance == null)
 		{
 			return;

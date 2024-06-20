@@ -53,6 +53,6 @@ public static class StorageSettings_ExposeData_Patcher
 			StorageCopyTracker.StorageGizmoSettings.Add(__instance, new StorageGizmoSettings());
 		}
 
-		Scribe_Values.Look(ref StorageCopyTracker.StorageGizmoSettings[__instance].bShouldCopyLimitSettings, "bShouldCopyLimitSettings", false, false);
+		Scribe_Values.Look(ref StorageCopyTracker.StorageGizmoSettings[__instance].bShouldCopyLimitSettings, "bShouldCopyLimitSettings", true, false);
 	}
 }
