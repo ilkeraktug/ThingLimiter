@@ -36,6 +36,10 @@
 	<bShowWarningWhenClearLimitSettingsClickedTooltip>Whatever, show warning if "Clear Limit Settings" clicked. It's strongly recommended to keep it set.</bShowWarningWhenClearLimitSettingsClickedTooltip>
 	<bShowWarningWhenClearLimitSettingsClickedFalse>You should enable showing "Clear Limit Settings" button.</bShowWarningWhenClearLimitSettingsClickedFalse>
 	<!-- Storage Settings -->
+	<shouldCountThingsAsOneLinkedStorageLabel>Count all linked storage buildings as one</shouldCountThingsAsOneLinkedStorageLabel>
+	<shouldCountThingsAsOneLinkedStorageTooltip>When allowed, all linked storages will share same limit and item count will be cumulated</shouldCountThingsAsOneLinkedStorageTooltip>
+	<shouldShareLimitSettingsWhenLinkedFalseLabel>Allow share limit settings (Hint : Disable "Count all linked storage buildings as one")</shouldShareLimitSettingsWhenLinkedFalseLabel>
+	<shouldShareLimitSettingsWhenLinkedFalseTooltip>You should disable "Count all linked storage buildings as one" setting.</shouldShareLimitSettingsWhenLinkedFalseTooltip>
 	<shouldShareLimitSettingsWhenLinkedLabel>Allow share limit settings</shouldShareLimitSettingsWhenLinkedLabel>
 	<shouldShareLimitSettingsWhenLinkedTooltip>When disabled, storage buildings will not share limit settings when linked</shouldShareLimitSettingsWhenLinkedTooltip>
 	<shouldKeepLimitSettingsWhenUnlinked>Keep limit settings when unlinked</shouldKeepLimitSettingsWhenUnlinked>

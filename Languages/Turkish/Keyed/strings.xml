@@ -36,6 +36,10 @@
 	<bShowWarningWhenClearLimitSettingsClickedTooltip>Limit ayarlarını temizlerken uyarı gösterilip gösterilmemesi ayarlansın. Açık kalması şiddetle tavsiye edilir.</bShowWarningWhenClearLimitSettingsClickedTooltip>
 	<bShowWarningWhenClearLimitSettingsClickedFalse>Öncelikle "Limit Ayarlarını Temizle" butonu gözükmesi ayarlanmalıdır.</bShowWarningWhenClearLimitSettingsClickedFalse>
 	<!-- Storage Settings -->
+	<shouldCountThingsAsOneLinkedStorageLabel>Tüm bağlı rafları bütün olarak hesapla</shouldCountThingsAsOneLinkedStorageLabel>
+	<shouldCountThingsAsOneLinkedStorageTooltip>İzin verildiğinde, tüm bağlı raflardaki limit aynı olacak ve eşya sayıların toplamı alınacaktır.</shouldCountThingsAsOneLinkedStorageTooltip>
+	<shouldShareLimitSettingsWhenLinkedFalseLabel>Limit ayarlarını paylaşmaya izin ver (İpucu : Öncelikle "Tüm bağlı rafları bütün olarak hesapla" ayarını devre dışı bırak)</shouldShareLimitSettingsWhenLinkedFalseLabel>
+	<shouldShareLimitSettingsWhenLinkedFalseTooltip>Öncelikle "Tüm bağlı rafları bütün olarak hesapla" ayarı devre dışı bırakılmadır.</shouldShareLimitSettingsWhenLinkedFalseTooltip>
 	<shouldShareLimitSettingsWhenLinkedLabel>Limit ayarlarını paylaşmaya izin ver</shouldShareLimitSettingsWhenLinkedLabel>
 	<shouldShareLimitSettingsWhenLinkedTooltip>İzin verildiğinde, bağlantı sağlandığında limitleme ayarlarını paylaşır.</shouldShareLimitSettingsWhenLinkedTooltip>
 	<shouldKeepLimitSettingsWhenUnlinked>Bağlantı koparıldığında limit ayarlarını sakla</shouldKeepLimitSettingsWhenUnlinked>
