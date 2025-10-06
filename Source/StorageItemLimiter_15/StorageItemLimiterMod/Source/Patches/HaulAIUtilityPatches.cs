@@ -31,6 +31,11 @@ public static class HaulAIUtility_HaulToCellStorageJob_Patches
 
         foreach (var thing in thingGrid.ThingsListAt(storeCell))
         {
+            if (thing.GetType().FullName == "AdaptiveStorage.ThingClass")
+            {
+                return;
+            }
+            
             if (thing is Building_Storage storageBuilding)
             {
                 int LeftNum = LimitSystemHelper.GetRemainingSpace(storageBuilding, t.def);
