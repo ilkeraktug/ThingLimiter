@@ -12,7 +12,27 @@ public static class Zone_Deregister_Patches
 	{
 		if (__instance is Zone_Stockpile StockpileZone)
 		{
-			StorageLimitTracker.ThingLimitsByZone.Remove(StockpileZone);
+			if (StorageLimitTracker.ThingLimitsByZone.TryGetValue(StockpileZone.ID, out var limitDictionary))
+			{
+				StorageLimitTracker.ThingLimitsByZoneCopy.Add(StockpileZone.ID, limitDictionary);
+				StorageLimitTracker.ThingLimitsByZoneCopy.Remove(StockpileZone.ID);
+			}
+		}
+	}
+}
+
+[HarmonyPatch(typeof(Zone), nameof(Zone.PostRegister), null)]
+public static class Zone_PostRegister_Patches
+{
+	public static void Postfix(Zone __instance)
+	{
+		if (__instance is Zone_Stockpile StockpileZone)
+		{
+			if (StorageLimitTracker.ThingLimitsByZoneCopy.TryGetValue(StockpileZone.ID, out var limitDictionary))
+			{
+				StorageLimitTracker.ThingLimitsByZone.Add(StockpileZone.ID, limitDictionary);
+				StorageLimitTracker.ThingLimitsByZone.Remove(StockpileZone.ID);
+			}
 		}
 	}
 }
@@ -22,7 +42,7 @@ public static class Building_Storage_DeSpawn_Patches
 {
 	public static void Postfix(Building_Storage __instance, DestroyMode mode)
 	{
-		if (__instance == null)
+		if (__instance == null || mode == DestroyMode.WillReplace)
 		{
 			return;
 		}

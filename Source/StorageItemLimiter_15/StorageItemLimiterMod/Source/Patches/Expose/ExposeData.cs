@@ -12,16 +12,16 @@ public static class StockpileZone_ExposeData_Patcher
 {
 	public static void Postfix(Zone_Stockpile __instance)
 	{
-		if (!StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance))
+		if (!StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance.ID))
 		{
-			StorageLimitTracker.ThingLimitsByZone.Add(__instance, new StorageLimitDictionary());
+			StorageLimitTracker.ThingLimitsByZone.Add(__instance.ID, new StorageLimitDictionary());
 		}
-		else if (StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder == null)
+		else if (StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder == null)
 		{
-			StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder = new();
+			StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder = new();
 		}
 		
-		Scribe_Collections.Look(ref StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder, "ThingLimitsByZone", LookMode.Value, LookMode.Value);
+		Scribe_Collections.Look(ref StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder, "ThingLimitsByZone", LookMode.Value, LookMode.Value);
 	}
 }
 

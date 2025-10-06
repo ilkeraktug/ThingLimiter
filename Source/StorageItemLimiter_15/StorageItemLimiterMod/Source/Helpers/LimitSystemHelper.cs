@@ -68,11 +68,11 @@ public static class LimitSystemHelper
         
         int LimitSize = int.MaxValue;
         
-        if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance))
+        if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance.ID))
         {
-            if(StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder.ContainsKey(thingLabel))
+            if(StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder.ContainsKey(thingLabel))
             {
-                LimitSize = StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder[thingLabel];
+                LimitSize = StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder[thingLabel];
             }
         }
 
@@ -89,9 +89,9 @@ public static class LimitSystemHelper
     //     
     //     if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance))
     //     {
-    //         if(StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder.ContainsKey(thingDef.LabelCap))
+    //         if(StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder.ContainsKey(thingDef.LabelCap))
     //         {
-    //             LimitSize = StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder[thingDef.LabelCap];
+    //             LimitSize = StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder[thingDef.LabelCap];
     //         }
     //     }
     //
@@ -112,11 +112,11 @@ public static class LimitSystemHelper
         
         int LimitSize = int.MaxValue;
         
-        if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance))
+        if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance.ID))
         {
-            if(StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder.ContainsKey(thingDef.LabelCap))
+            if(StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder.ContainsKey(thingDef.LabelCap))
             {
-                LimitSize = StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder[thingDef.LabelCap];
+                LimitSize = StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder[thingDef.LabelCap];
             }
         }
 
@@ -149,22 +149,22 @@ public static class LimitSystemHelper
     }
     public static void UpdateThingLimit(Zone_Stockpile __instance, string thingDef, int Limit)
     {
-        if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance))
+        if (StorageLimitTracker.ThingLimitsByZone.ContainsKey(__instance.ID))
         {
-            if (StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder.ContainsKey(thingDef))
+            if (StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder.ContainsKey(thingDef))
             {
-                StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder[thingDef] = Limit;
+                StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder[thingDef] = Limit;
             }
             else
             {
-                StorageLimitTracker.ThingLimitsByZone[__instance].m_DataHolder.Add(thingDef, Limit);
+                StorageLimitTracker.ThingLimitsByZone[__instance.ID].m_DataHolder.Add(thingDef, Limit);
             }
         }
         else
         {
             var MyDictionary = new Dictionary<string, int>();
             MyDictionary.Add(thingDef, Limit);
-            StorageLimitTracker.ThingLimitsByZone.Add(__instance, new StorageLimitDictionary(MyDictionary));
+            StorageLimitTracker.ThingLimitsByZone.Add(__instance.ID, new StorageLimitDictionary(MyDictionary));
         }
     }
 
@@ -390,7 +390,7 @@ public static class LimitSystemHelper
         
         if (__instance is Zone_Stockpile StockpileZone)
         {
-            StorageLimitTracker.ThingLimitsByZone.Remove(StockpileZone);
+            StorageLimitTracker.ThingLimitsByZone.Remove(StockpileZone.ID);
         }
         else if (__instance is Building_Storage storageBuilding)
         {
@@ -409,17 +409,17 @@ public static class StorageSettingsHelper
             return;
         }
         
-        if (!StorageLimitTracker.ThingLimitsByZone.ContainsKey(sourceObject))
+        if (!StorageLimitTracker.ThingLimitsByZone.ContainsKey(sourceObject.ID))
         {
             return;
         }
-        if(StorageLimitTracker.ThingLimitsByZone.ContainsKey(targetObject))
+        if(StorageLimitTracker.ThingLimitsByZone.ContainsKey(targetObject.ID))
         {
-            StorageLimitTracker.ThingLimitsByZone[targetObject] = StorageLimitTracker.ThingLimitsByZone[sourceObject];
+            StorageLimitTracker.ThingLimitsByZone[targetObject.ID] = StorageLimitTracker.ThingLimitsByZone[sourceObject.ID];
         }
         else
         {
-            StorageLimitTracker.ThingLimitsByZone.Add(targetObject, StorageLimitTracker.ThingLimitsByZone[sourceObject]);
+            StorageLimitTracker.ThingLimitsByZone.Add(targetObject.ID, StorageLimitTracker.ThingLimitsByZone[sourceObject.ID]);
         }
     }
     
